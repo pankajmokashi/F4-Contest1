@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.content h1, .content div{
+    margin-top: 30px;
+}
+.content .btns{
+    display: flex;
+}
+.content button{
+    padding: 6px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(102, 102, 102);
+}
+.content button img{
+    width: 40px;
+    background-color: white;
+}
+.content .facebook{
+    scale: 0.8;
+}
+.content .text{
+    letter-spacing: 2px;
+    font-size: 22px;
+    text-align: center;
+    color: rgb(181, 181, 181);
+}
+form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    margin-top: 30px;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    outline: none;
+    font-size: 18px;
+}
+form input::placeholder{
+    color: rgb(185, 185, 185);
+}
+form .btn{
+    background-color: #7CD2D7;
+    color: white;
+    padding: 12px 8px;
+    font-weight: 500;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.error{
+    margin: auto;
+    color: #FE6383;
+    margin-top: 20px;
+}
+.success{
+    margin: auto;
+    color: #7CD2D7;
+    margin-top: 20px;
+}
+.password{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    margin-top: 30px;
+}
+.password input{
+    flex-grow: 1;
+    border-bottom: none;
+    margin-top: 0;
+}
+.password span{
+    transform: scale(2, 1.5);
+    cursor: pointer;
+    margin-right: 5px;
+}
+.password span svg{
+    color: rgb(162, 162, 162);
+}
+
+
+@media screen and (max-width:450px) {
+    .content, form{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .content button{
+        font-size: 12px;
+    }
+    form input{
+        font-size: 14px;
+    }
+}
